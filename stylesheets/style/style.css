@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 8px;
+  background-color: #99B0F3;
+  margin: auto;
+}
+
+.siteTitle {
+  color: #1554F0;
+  font-weight: bold;
+}
+
+.login, .signin {
+  background-color: #1554F0;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
+}
+
+footer {
+  background-color: #84A4BC;
+  border: 2p solid black;
+  width: 100%;
+  padding: 10px;
+}
+footer a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */

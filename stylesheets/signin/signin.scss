@@ -1,0 +1,92 @@
+// standarts colors for the projet
+
+$mblue :#1554F0 ;
+$mblueinf :#99B0F3 ;
+$mbluesup :#07297C ;
+$mgrey :#7C7C84 ;
+$offblue :#84A4BC ;
+$offgreen :#475460 ;
+$reddelete : #930C0C ;
+$neutral0 : #F1F1F1 ;
+$neutral1 : #D9D9D9 ;
+
+body>div{
+    color: transparent; // point disapprearing
+    width: 100%;
+    a{
+        float: right;
+    }
+}
+section{
+    margin-top: 50px;
+}
+form{
+    max-width: 50%;
+    min-width: fit-content;
+    margin: auto;
+
+    fieldset{
+        background-color:$neutral0 ;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        padding-top: 5%;
+        gap: 20px;
+
+        input{
+            background-color: $neutral1;
+            color: $mgrey;
+            border: none;
+            padding: 10px;
+            &:last-child{
+                margin: auto;
+                min-width: fit-content;
+                width: 30%;
+                border-radius: 5px;
+                background-color: $mblue;
+                color: white ;
+
+                &:hover{
+                    opacity: 0.7;
+                }
+                &:active{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    legend{
+        color:black;
+        font-size: 2em;
+        background-color: white;
+        border-radius: 15px;
+        height: min-content;
+        padding: 5px 10px ;
+        margin: auto;
+    }
+}
+@media all and (max-width:600px){
+    section{
+        margin-top: 170px;
+    }
+    form{
+        max-width: 80%;
+    }
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    a{
+        text-decoration: none;
+        color: $mblue;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    div{
+        margin: auto;
+        width: fit-content;
+    }
+}

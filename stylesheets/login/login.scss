@@ -1,0 +1,110 @@
+$mblue :#1554F0 ;
+$mblueinf :#99B0F3 ;
+$mbluesup :#07297C ;
+$mgrey :#7C7C84 ;
+$offblue :#84A4BC ;
+$offgreen :#475460 ;
+$reddelete : #930C0C ;
+$neutral0 : #F1F1F1 ;
+$neutral1 : #D9D9D9 ;
+
+
+body{
+    background-color: $mbluesup;
+}
+section{
+    margin-top: 90px;
+}
+@media all and (max-width:550px){
+    section{
+        margin-top: 150px;
+    }
+}
+
+
+form{
+    background-color: white;
+    box-shadow: 0px 2px 5px #0000004d;
+    width: 75%;
+    margin: auto;
+    border-radius: 5px;
+    
+    >fieldset{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+
+        >legend:first-child{
+            margin: auto;
+            border-radius: 5px;
+            padding: 5px 5px;
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+    }
+        
+}
+
+.identification{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    gap: 5px;
+    fieldset{
+        background-color: $neutral0;
+        border: 1px solid $neutral1 ;
+        width: 80%;
+
+        legend{
+            background-color: white;
+            border-radius: 2px;
+            color: $mgrey;
+            font-size: x-small;
+            padding: 3px;
+        }
+        input{
+            background-color: transparent;
+            border: none;
+            width: 100%;
+            // &:focus{
+            //     border: 1px solid $reddelete;
+            // }
+        }
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $mblueinf;
+    font-size: 0.5em;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.siteTitle{
+    // font-size: calc(6000vw / 1018);
+    text-align: center;
+}
+@media all and (max-width:950px){
+    .siteTitle{
+        font-size:3em ;
+    }
+}
+
+input[type=submit]{
+    color: white;
+    width: 30%;
+    min-width: fit-content;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background-color: $mblue;
+    &:hover{
+        opacity: 0.7;
+    }
+    &:active{
+        opacity: 1;
+    }
+}

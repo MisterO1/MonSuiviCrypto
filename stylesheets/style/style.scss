@@ -1,0 +1,54 @@
+// standarts colors for the projet
+
+$mblue :#1554F0 ;
+$mblueinf :#99B0F3 ;
+$mbluesup :#07297C ;
+$mgrey :#7C7C84 ;
+$offblue :#84A4BC ;
+$offgreen :#475460 ;
+$reddelete : #930C0C ;
+$neutral0 : #F1F1F1 ;
+$neutral1 : #D9D9D9 ;
+
+// general stylesheet
+
+
+body{
+    margin: 0;
+    overflow-x: hidden ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 8px;
+    background-color: $mblueinf;
+    // position: fixed;
+    margin: auto;
+}
+.siteTitle{
+    color: $mblue;
+    font-weight:bold;
+}
+
+.login,.signin{
+    background-color: $mblue;
+    color: white ;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+}
+
+
+footer{
+    background-color: $offblue;
+    border: 2p solid black;
+    width: 100%;
+    padding: 10px;
+    a{
+        text-decoration: none;
+    }
+}
